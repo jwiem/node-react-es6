@@ -1,0 +1,5 @@
+GET http://localhost:3001/books?page=1&limit=4
+
+### GET http://localhost:3001/books/search?name=Glanvac
+
+### GET http://localhost:3001/protocols

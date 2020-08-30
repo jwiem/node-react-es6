@@ -1,0 +1,21 @@
+{
+  "name": "node-react-es6",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "run-p install:api install:frontend",
+    "install:api": "cd api && yarn",
+    "install:frontend": "cd frontend && yarn",
+    "start": "run-p start:api start:frontend",
+    "start:api": "cd api && yarn dev",
+    "start:frontend": "cd frontend && yarn start",
+    "build": "run-p build:api build:frontend",
+    "build:api": "cd api && yarn build && cd ..",
+    "build:frontend": "cd frontend && yarn build && cd .."
+  },
+  "devDependencies": {
+    "open-cli": "^6.0.1",
+    "yarn-run-all": "^3.1.1"
+  }
+}

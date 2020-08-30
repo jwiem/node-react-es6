@@ -1,0 +1,9 @@
+{
+    "development": {
+      "username": "postgres",
+      "password": "postgres",
+      "database": "bookdb",
+      "host": "localhost",
+      "dialect": "postgres"
+    }
+  }
